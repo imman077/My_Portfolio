@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Immanuvel A | Full Stack & AI Developer Portfolio</title>
+    <meta name="description" content="Official portfolio of Immanuvel A - Full Stack & AI Developer specializing in scalable web applications, mobile apps, and intelligent AI solutions.">
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts & Cursive Scripts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;900&family=Space+Grotesk:wght@400;500;700&family=Alex+Brush&family=Great+Vibes&family=Sacramento&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Cinematic Preloader -->
+    <div id="preloader" class="preloader">
+        <div class="preloader-bg-glow"></div>
+        <div class="preloader-grid-pattern"></div>
+
+        <!-- Center Cinematic Name Experience -->
+        <div id="preloader-content" class="preloader-content">
+            <div class="cinematic-name-container">
+                <span id="intro-letter-i" class="intro-letter-i">I</span>
+                <div id="intro-rest-wrapper" class="intro-rest-wrapper">
+                    <span id="intro-rest-text" class="intro-rest-text">MMANUVEL A</span>
+                </div>
+            </div>
+
+            <p id="intro-subtitle" class="intro-subtitle">FULL STACK &amp; AI DEVELOPER</p>
+
+            <div class="loader-bar-wrapper">
+                <div class="loader-bar-container">
+                    <div id="loader-bar" class="loader-bar"></div>
+                </div>
+            </div>
+            <div class="loader-info-row">
+                <p id="loader-text" class="loader-text">Loading experience... 0%</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="navbar fixed top-0 left-0 w-full z-[100] flex justify-between items-center px-[6%] py-6 backdrop-blur-md bg-gradient-to-b from-[#08080a]/80 to-transparent border-b border-white/5 font-heading">
+        <a href="#hero-section" class="logo-link flex items-center h-15 no-underline">
+            <img src="logo2.png" alt="CineCraft Logo" class="logo-img h-full w-auto object-contain">
+        </a>
+        <nav class="nav-links hidden lg:flex items-center gap-9">
+            <a href="#hero-section" class="nav-item active text-white/60 hover:text-white text-sm uppercase tracking-wider font-medium relative py-1 transition-all duration-300">Home</a>
+            <a href="#about-section" class="nav-item text-white/60 hover:text-white text-sm uppercase tracking-wider font-medium relative py-1 transition-all duration-300">About Me</a>
+            <a href="#services-section" class="nav-item text-white/60 hover:text-white text-sm uppercase tracking-wider font-medium relative py-1 transition-all duration-300">Skills</a>
+            <a href="#experience" class="nav-item text-white/60 hover:text-white text-sm uppercase tracking-wider font-medium relative py-1 transition-all duration-300">Experience</a>
+            <a href="#projects" class="nav-item text-white/60 hover:text-white text-sm uppercase tracking-wider font-medium relative py-1 transition-all duration-300">Projects</a>
+            <a href="#contact" class="nav-item text-white/60 hover:text-white text-sm uppercase tracking-wider font-medium relative py-1 transition-all duration-300">Contact</a>
+        </nav>
+        <div class="header-action flex items-center gap-3.5">
+            <a href="#contact" class="btn-nav inline-flex items-center gap-2 px-5 py-2.5 border border-[#a855f7] text-white rounded-lg text-xs font-semibold uppercase tracking-wider shadow-purple-glow hover:bg-gradient-to-r hover:from-[#a855f7] hover:to-[#06b6d4] hover:border-transparent transition-all duration-300">Let's Talk <i class="fa-regular fa-paper-plane"></i></a>
+        </div>
+    </header>
+
+
+
+    <!-- Main Container for Scroll Animations -->
+    <main class="scroll-container relative w-full">
+        
+        <!-- Section 1: Hero Section -->
+        <section id="hero-section" class="scroll-section relative w-screen h-screen overflow-hidden bg-black">
+            <div class="canvas-container absolute inset-0 z-1">
+                <canvas id="hero-canvas" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full block z-1"></canvas>
+                <video id="hero-bg-video" class="hero-bg-video absolute inset-0 w-full h-full object-cover pointer-events-none opacity-0 z-50" src="bg_anim.mp4" muted playsinline></video>
+                <div class="canvas-overlay absolute inset-0 z-3 pointer-events-none"></div>
+            </div>
+
+
+            <div class="hero-content-grid absolute top-0 left-0 w-full h-full pt-[6.5rem] px-[8%] pb-8 grid grid-cols-1 lg:grid-cols-[1.3fr_0.8fr_1.3fr] items-center gap-12 pointer-events-none z-10">
+                <!-- Left Column -->
+                <div class="hero-left flex flex-col items-start text-left z-10 h-full justify-center gap-2 py-6">
+                    <div class="badge-status inline-flex items-center gap-2.5 px-4.5 py-1.8 bg-[#a855f7]/10 border border-[#a855f7]/25 text-white text-xs font-semibold rounded-full mb-3 pointer-events-auto">
+                        <span class="pulse-dot relative inline-block w-2 h-2 bg-[#a855f7] rounded-full"></span>
+                        Available for new opportunities
+                    </div>
+                    <div class="hero-left-mid flex flex-col items-start">
+                        <h1 class="hero-name-title font-heading text-4xl sm:text-5xl lg:text-6xl font-black leading-tight tracking-tight text-white uppercase mb-3">
+                            I AM <br>
+                            <span class="highlight-purple-blue bg-gradient-to-r from-[#a855f7] to-[#06b6d4] bg-clip-text text-transparent inline-block">IMMANUVEL</span>
+                        </h1>
+                        <p class="hero-desc-text text-sm sm:text-base text-white/60 leading-relaxed max-w-[440px] mb-2 font-light">
+                            I build scalable web applications, AI-powered products, and beautiful user experiences.
+                        </p>
+                        <p class="hero-sub-desc-text text-xs sm:text-sm text-white/60 leading-relaxed max-w-[440px] mb-5 font-normal opacity-85">
+                            Currently building modern applications with Next.js, Flutter, NestJS & AI.
+                        </p>
+                        <div class="hero-actions flex gap-4 mb-5 pointer-events-auto">
+                            <a href="Immanuvel_A_Resume.pdf" download="Immanuvel_A_Resume.pdf" class="btn-primary-filled bg-gradient-to-r from-[#a855f7] to-[#06b6d4] text-white px-6 py-3 font-heading text-xs font-bold uppercase tracking-wider rounded-lg shadow-purple-glow hover:-translate-y-1 transition-all duration-300 inline-flex items-center justify-center gap-2.5">Download CV <i class="fa-solid fa-arrow-down"></i></a>
+                            <a href="#projects" class="btn-outline bg-[#121218]/40 border-1.5 border-[#a855f7] text-white px-6 py-3 font-heading text-xs font-bold uppercase tracking-wider rounded-lg backdrop-blur-md shadow-purple-glow/20 hover:bg-[#a855f7]/15 hover:border-[#06b6d4] hover:-translate-y-1 transition-all duration-300 inline-flex items-center justify-center gap-2.5">View My Works <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                        <div class="hero-connect flex flex-col gap-2.5 pointer-events-auto">
+                            <p class="social-title text-xs uppercase tracking-widest text-white/60 font-semibold">Connect with me</p>
+                            <div class="social-links-container flex gap-3.5">
+                                <a href="https://github.com/imman077" target="_blank" class="social-icon-btn w-10 h-10 flex items-center justify-center bg-[#121216]/60 border border-white/10 rounded-lg text-white/60 text-lg hover:text-white hover:border-[#a855f7] hover:shadow-purple-glow hover:-translate-y-1 transition-all duration-300" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                                <a href="https://www.linkedin.com/in/immanuvel077/" target="_blank" class="social-icon-btn w-10 h-10 flex items-center justify-center bg-[#121216]/60 border border-white/10 rounded-lg text-white/60 text-lg hover:text-white hover:border-[#a855f7] hover:shadow-purple-glow hover:-translate-y-1 transition-all duration-300" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="mailto:immanromanaj@gmail.com" class="social-icon-btn w-10 h-10 flex items-center justify-center bg-[#121216]/60 border border-white/10 rounded-lg text-white/60 text-lg hover:text-white hover:border-[#a855f7] hover:shadow-purple-glow hover:-translate-y-1 transition-all duration-300" title="Email"><i class="fa-regular fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Center Column -->
+                <div class="hero-center flex flex-col items-center justify-end h-full z-10">
+                    <div class="scroll-indicator absolute bottom-10 flex flex-col items-center gap-2">
+                        <span class="mouse-icon w-[22px] h-[36px] border-2 border-white/60 rounded-xl relative">
+                            <span class="mouse-wheel w-1 h-2 bg-[#06b6d4] rounded-sm absolute top-1.5 left-1/2 -translate-x-1/2"></span>
+                        </span>
+                        <span class="scroll-text font-heading text-[0.65rem] tracking-[0.25em] text-white/60">SCROLL TO DISCOVER</span>
+                    </div>
+                </div>
+
+                <!-- Right Column -->
+                <div class="hero-right flex flex-col items-start text-left z-10 h-full justify-center gap-14 py-8">
+                    <div class="specialty-box flex flex-col gap-3">
+                        <div class="specialty-badge flex items-center gap-2 text-[#a855f7] text-xs font-bold tracking-[0.25em]">
+                            <span class="specialty-dot w-1.5 h-1.5 bg-[#a855f7] rounded-full"></span>
+                            SPECIALIZED IN
+                        </div>
+                        <div class="specialty-text text-white font-heading font-extrabold text-sm sm:text-base leading-relaxed tracking-wider">
+                            FULL STACK, AI SOLUTIONS,<br>
+                            LLM INTEGRATION, AND<br>
+                            MODERN WEB DEVELOPMENT.
+                        </div>
+                    </div>
+
+                    <div class="role-box flex flex-col items-start gap-1">
+                        <h3 class="role-title font-heading font-black text-2xl sm:text-3xl lg:text-4xl leading-tight tracking-tight text-white uppercase">
+                            FULL STACK<br>
+                            DEVELOPER &<br>
+                            <span class="highlight-purple-blue bg-gradient-to-r from-[#a855f7] to-[#06b6d4] bg-clip-text text-transparent">AI DEVELOPER</span>
+                        </h3>
+                        <div class="sketch-underline-wrapper w-[180px] h-3 text-[#a855f7] opacity-95 flex mt-1">
+                            <svg class="sketch-underline-svg w-full h-full" viewBox="0 0 200 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2 7C45 4.5 90 2 198 3.5" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: About Me Section -->
+        <section id="about-section" class="scroll-section">
+            <div class="canvas-container">
+                <canvas id="about-canvas"></canvas>
+                <div class="canvas-overlay"></div>
+            </div>
+            <div class="content-overlay right-aligned">
+                <h2 class="section-title">ABOUT ME</h2>
+                <div class="about-subtitle">BUILDING SCALABLE WEB APPLICATIONS & AI-POWERED SOLUTIONS</div>
+                
+                <p class="about-paragraph">I'm a Full Stack Developer with 1+ year of experience building scalable web applications and AI-powered solutions using modern technologies.</p>
+                <p class="about-paragraph">I specialize in React.js, Next.js, Python, FastAPI, Flutter, and Node.js, creating responsive, secure, and high-performance applications.</p>
+                <p class="about-paragraph">I'm passionate about AI, Information Security, and continuous learning, always striving to build clean, impactful software.
+</p>
+                
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <span class="stat-number">1+</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">15+</span>
+                        <span class="stat-label">Projects Completed</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">20+</span>
+                        <span class="stat-label">Technologies</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Passion for Learning</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Section 3: Services Section -->
+        <section id="services-section" class="scroll-section">
+            <div class="canvas-container">
+                <canvas id="services-canvas"></canvas>
+                <div class="canvas-overlay"></div>
+            </div>
+            <div class="skills-overlay">
+                <div class="skills-header">
+                    <h2 class="skills-title">What I <span class="highlight-purple-blue">Build</span></h2>
+                    <p class="skills-subtitle">I build scalable, secure and intelligent applications across multiple technologies.</p>
+                </div>
+
+                <div class="skills-content-grid">
+                    <!-- Left Column: Cards 01 to 04 -->
+                    <div class="skills-col skills-left-col">
+                        <!-- Card 01 -->
+                        <div class="skill-card-wrapper" data-card="1">
+                            <div class="card-num-bubble">01</div>
+                            <div class="skill-card">
+                                <div class="skill-card-header">
+                                    <div class="skill-icon-box pink-glow"><i class="fa-solid fa-code"></i></div>
+                                    <div class="skill-card-info">
+                                        <h4>Frontend Development</h4>
+                                        <p>Building responsive, interactive and performant web interfaces.</p>
+                                    </div>
+                                </div>
+                                <div class="skill-tags">
+                                    <span><span class="tag-dot blue"></span>React</span>
+                                    <span><span class="tag-dot cyan"></span>Next.js</span>
+                                    <span><span class="tag-dot purple"></span>TypeScript</span>
+                                    <span><span class="tag-dot teal"></span>Tailwind CSS</span>
+                                    <span><span class="tag-dot green"></span>GSAP</span>
+                                    <span><span class="tag-dot magenta"></span>Zustand</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 02 -->
+                        <div class="skill-card-wrapper" data-card="2">
+                            <div class="card-num-bubble">02</div>
+                            <div class="skill-card">
+                                <div class="skill-card-header">
+                                    <div class="skill-icon-box purple-glow"><i class="fa-solid fa-mobile-screen-button"></i></div>
+                                    <div class="skill-card-info">
+                                        <h4>Mobile Development</h4>
+                                        <p>Cross-platform mobile apps with native-like performance.</p>
+                                    </div>
+                                </div>
+                                <div class="skill-tags">
+                                    <span><span class="tag-dot blue"></span>Flutter</span>
+                                    <span><span class="tag-dot cyan"></span>Dart</span>
+                                    <span><span class="tag-dot orange"></span>Firebase</span>
+                                    <span><span class="tag-dot teal"></span>Riverpod</span>
+                                    <span><span class="tag-dot gray"></span>SQLite</span>
+                                    <span><span class="tag-dot red"></span>Push Notifs</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 03 -->
+                        <div class="skill-card-wrapper" data-card="3">
+                            <div class="card-num-bubble">03</div>
+                            <div class="skill-card">
+                                <div class="skill-card-header">
+                                    <div class="skill-icon-box cyan-glow"><i class="fa-solid fa-database"></i></div>
+                                    <div class="skill-card-info">
+                                        <h4>Database & Storage</h4>
+                                        <p>Designing efficient, scalable and secure data systems.</p>
+                                    </div>
+                                </div>
+                                <div class="skill-tags">
+                                    <span><span class="tag-dot blue"></span>PostgreSQL</span>
+                                    <span><span class="tag-dot green"></span>MongoDB</span>
+                                    <span><span class="tag-dot orange"></span>MySQL</span>
+                                    <span><span class="tag-dot red"></span>Redis</span>
+                                    <span><span class="tag-dot purple"></span>Prisma</span>
+                                    <span><span class="tag-dot purple"></span>Qrant</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+
+                    <!-- Center spacer for background/interactive canvas sequence alignment -->
+                    <div class="skills-center-spacer"></div>
+
+                    <!-- Right Column: Cards 05 to 08 -->
+                    <div class="skills-col skills-right-col">
+                        <!-- Card 05 -->
+                        <div class="skill-card-wrapper" data-card="4">
+                            <div class="skill-card">
+                                <div class="skill-card-header">
+                                    <div class="skill-icon-box green-glow"><i class="fa-solid fa-gear"></i></div>
+                                    <div class="skill-card-info">
+                                        <h4>Backend Development</h4>
+                                        <p>Building robust, scalable and maintainable server-side apps.</p>
+                                    </div>
+                                </div>
+                                <div class="skill-tags">
+                                    <span><span class="tag-dot green"></span>Node.js</span>
+                                    <span><span class="tag-dot red"></span>NestJS</span>
+                                    <span><span class="tag-dot gray"></span>Express.js</span>
+                                    <span><span class="tag-dot cyan"></span>FastAPI</span>
+                                    <span><span class="tag-dot magenta"></span>GraphQL</span>
+                                    <span><span class="tag-dot blue"></span>REST API</span>
+                                </div>
+                            </div>
+                            <div class="card-num-bubble">04</div>
+                        </div>
+
+                        <!-- Card 06 -->
+                        <div class="skill-card-wrapper" data-card="5">
+                            <div class="skill-card">
+                                <div class="skill-card-header">
+                                    <div class="skill-icon-box pink-glow"><i class="fa-solid fa-brain"></i></div>
+                                    <div class="skill-card-info">
+                                        <h4>AI & LLM Integration</h4>
+                                        <p>Building intelligent apps powered by modern AI models.</p>
+                                    </div>
+                                </div>
+                                <div class="skill-tags">
+                                    <span><span class="tag-dot green"></span>OpenAI</span>
+                                    <span><span class="tag-dot blue"></span>Gemini</span>
+                                    <span><span class="tag-dot purple"></span>LangChain</span>
+                                    <span><span class="tag-dot cyan"></span>RAG</span>
+                                    <span><span class="tag-dot orange"></span>Vector DB</span>
+                                    <span><span class="tag-dot magenta"></span>Prompt Eng.</span>
+                                </div>
+                            </div>
+                            <div class="card-num-bubble">05</div>
+                        </div>
+
+                        <!-- Card 07 -->
+                        <div class="skill-card-wrapper" data-card="6">
+                            <div class="skill-card">
+                                <div class="skill-card-header">
+                                    <div class="skill-icon-box blue-glow"><i class="fa-solid fa-cloud"></i></div>
+                                    <div class="skill-card-info">
+                                        <h4>Cloud & DevOps</h4>
+                                        <p>Deploying, scaling and monitoring applications in the cloud.</p>
+                                    </div>
+                                </div>
+                                <div class="skill-tags">
+                                    <span><span class="tag-dot orange"></span>AWS</span>
+                                    <span><span class="tag-dot blue"></span>Docker</span>
+                                    <span><span class="tag-dot white"></span>Vercel</span>
+                                    <span><span class="tag-dot green"></span>GitHub Actions</span>
+                                    <span><span class="tag-dot purple"></span>CI/CD</span>
+                                </div>
+                            </div>
+                            <div class="card-num-bubble">06</div>
+                        </div>
+
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Experience Section (Futuristic Train Journey Theme) -->
+        <section id="experience" class="scroll-section experience-train-section">
+            <!-- Background Image Overlay & Particles -->
+            <div class="exp-bg-image"></div>
+            <div class="exp-bg-overlay"></div>
+            <div class="glow-bg-particles">
+                <div class="glow-particle gp1"></div>
+                <div class="glow-particle gp2"></div>
+            </div>
+
+            <!-- Station Sign Indicator on Left side near Train -->
+            <div class="station-sign-badge" id="station-sign">
+                <div class="station-icon-box">
+                    <i class="fa-solid fa-train-subway"></i>
+                </div>
+                <div class="station-info">
+                    <span class="station-label">STATION</span>
+                    <span class="station-number" id="station-num-display">01</span>
+                </div>
+            </div>
+
+            <div class="experience-journey-container">
+                <!-- Section Header -->
+                <div class="section-header exp-header">
+                    <span class="exp-journey-pill">
+                        <i class="fa-solid fa-train"></i> EXPERIENCE JOURNEY
+                    </span>
+                    <h2 class="section-title font-gradient">My Work <span class="gradient-text-cyan">Experience</span></h2>
+                    <p class="section-subtitle">A journey of growth, learning, and building impactful digital solutions through innovation and dedication.</p>
+                </div>
+
+                <!-- Main Experience Display Area (Left Space for Train, Right for Card & Timeline) -->
+                <div class="exp-content-grid">
+                    <!-- Left Space for Train -->
+                    <div class="exp-left-spacer"></div>
+
+                    <!-- Right Side: Interactive Experience Card & Timeline -->
+                    <div class="exp-right-column">
+                        <div class="exp-card-wrapper">
+                            <!-- Card Content -->
+                            <div class="exp-main-card glass-card" id="exp-main-card">
+                                <!-- Card Header Row -->
+                                <div class="exp-card-header">
+                                    <div class="exp-company-logo-box" id="exp-company-logo">
+                                    <img src="appikorn.png" alt="Appikorn Software Consultancy Logo" class="company-logo-img">
+                                </div>
+                                    <div class="exp-company-details">
+                                        <div class="exp-title-row">
+                                            <span class="exp-status-badge" id="exp-status">CURRENT</span>
+                                            <h3 class="exp-company-name" id="exp-company">Appikorn Software Consultancy</h3>
+                                        </div>
+                                        <h4 class="exp-role-title" id="exp-role">Junior Full Stack Developer</h4>
+                                        <div class="exp-meta-info">
+                                            <span class="exp-date"><i class="fa-regular fa-calendar-days"></i> <span id="exp-period">Jul 2024 - Present</span></span>
+                                            <span class="exp-meta-dot">•</span>
+                                            <span class="exp-duration"><i class="fa-solid fa-shield-halved"></i> <span id="exp-duration-text">1+ Year</span></span>
+                                        </div>
+                                        <p class="exp-description" id="exp-desc">
+                                            Working on AI-powered ERP and web applications. Building responsive and scalable solutions with modern technologies.
+                                        </p>
+                                    </div>
+                                    <div class="exp-briefcase-icon">
+                                        <i class="fa-solid fa-briefcase"></i>
+                                    </div>
+                                </div>
+
+                                <!-- Card Middle Grid (Responsibilities & Tech Stack) -->
+                                <div class="exp-card-body">
+                                    <!-- Left Column: Responsibilities -->
+                                    <div class="exp-body-col exp-responsibilities-col">
+                                        <h5 class="col-title purple-text">
+                                            <i class="fa-regular fa-square-check"></i> KEY RESPONSIBILITIES
+                                        </h5>
+                                        <ul class="exp-bullets-list" id="exp-responsibilities">
+                                            <li>Developed and maintained ERP modules</li>
+                                            <li>Built responsive UI with React & Next.js</li>
+                                            <li>Integrated REST APIs and authentication</li>
+                                            <li>Collaborated with cross-functional teams</li>
+                                            <li>Improved performance and optimized code</li>
+                                        </ul>
+                                    </div>
+
+                                    <!-- Right Column: Tech Stack -->
+                                    <div class="exp-body-col exp-tech-col">
+                                        <h5 class="col-title cyan-text">
+                                            <i class="fa-solid fa-laptop-code"></i> TECH STACK
+                                        </h5>
+                                        <div class="exp-tech-tags" id="exp-tech-tags">
+                                            <span class="tech-tag tag-purple">React</span>
+                                            <span class="tech-tag tag-blue">Next.js</span>
+                                            <span class="tech-tag tag-green">Node.js</span>
+                                            <span class="tech-tag tag-emerald">Express</span>
+                                            <span class="tech-tag tag-green">MongoDB</span>
+                                            <span class="tech-tag tag-cyan">TypeScript</span>
+                                            <span class="tech-tag tag-purple">Tailwind CSS</span>
+                                            <span class="tech-tag tag-cyan">Flutter</span>
+                                            <span class="tech-tag tag-orange">Firebase</span>
+                                            <span class="tech-tag tag-gray">Git</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Vertical Side Timeline Station Bar -->
+                        <div class="exp-side-timeline">
+                            <div class="vertical-station-track">
+                                <div class="vertical-line-base"></div>
+                                <div class="vertical-line-progress" id="station-progress-line"></div>
+                                
+                                <div class="vertical-station-nodes">
+                                    <button class="station-node-btn active" data-index="0">
+                                        <span class="node-ring"></span>
+                                        <div class="node-info">
+                                            <span class="node-num">01</span>
+                                            <span class="node-name">Appikorn</span>
+                                        </div>
+                                    </button>
+                                    <button class="station-node-btn" data-index="1">
+                                        <span class="node-ring"></span>
+                                        <div class="node-info">
+                                            <span class="node-num">02</span>
+                                            <span class="node-name">M.Tech (PTU)</span>
+                                        </div>
+                                    </button>
+                                    <button class="station-node-btn" data-index="2">
+                                        <span class="node-ring"></span>
+                                        <div class="node-info">
+                                            <span class="node-num">03</span>
+                                            <span class="node-name">B.Tech (CCET)</span>
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Projects Section (Horizontal Scroll) -->
+        <section id="projects" class="scroll-section projects-pinned-section">
+            <div class="cursor-glow"></div>
+            
+            <!-- Projects Pagination Dots (Only visible on projects section) -->
+            <div class="projects-nav-dots">
+                <div class="project-dot active" data-index="0">
+                    <span class="project-dot-label">CineAI Studio</span>
+                </div>
+                <div class="project-dot" data-index="1">
+                    <span class="project-dot-label">OmniSphere ERP</span>
+                </div>
+                <div class="project-dot" data-index="2">
+                    <span class="project-dot-label">AeroVision AR</span>
+                </div>
+            </div>
+            
+            <div class="projects-overlay">
+                <div class="section-header">
+                    <h2 class="section-title font-gradient">Projects</h2>
+                    <p class="section-subtitle">Things I've built with passion and the technologies I love</p>
+                </div>
+            </div>
+
+            <div class="projects-container">
+                <div class="project-cards-track">
+                    
+                    <!-- Project 1 -->
+                    <div class="project-card real-project" id="project-1">
+                        <!-- Surprise Box Hover Assets -->
+                        <div class="tech-badges-container">
+                            <div class="tech-badge-item" data-id="figma" data-name="Figma" data-x="0" data-y="-225" data-delay="0.02" data-rotate="0" data-color="#F24E1E" data-glow="rgba(242, 78, 30, 0.4)" data-icon="fa-brands fa-figma"></div>
+                            <div class="tech-badge-item" data-id="react" data-name="React" data-x="-240" data-y="-225" data-delay="0.04" data-rotate="-10" data-color="#00D8FF" data-glow="rgba(0, 216, 255, 0.4)" data-icon="fa-brands fa-react"></div>
+                            <div class="tech-badge-item" data-id="nextjs" data-name="Next.js" data-x="240" data-y="-225" data-delay="0.06" data-rotate="12" data-color="#E2E8F0" data-glow="rgba(226, 232, 240, 0.4)" data-icon="fa-solid fa-code"></div>
+                            <div class="tech-badge-item" data-id="typescript" data-name="TypeScript" data-x="-560" data-y="-120" data-delay="0.08" data-rotate="-8" data-color="#3178C6" data-glow="rgba(49, 120, 198, 0.4)" data-icon="fa-solid fa-cubes"></div>
+                            <div class="tech-badge-item" data-id="javascript" data-name="JavaScript" data-x="560" data-y="-120" data-delay="0.10" data-rotate="8" data-color="#F7DF1E" data-glow="rgba(247, 223, 30, 0.4)" data-icon="fa-brands fa-js"></div>
+                            <div class="tech-badge-item" data-id="tailwind" data-name="Tailwind CSS" data-x="-580" data-y="0" data-delay="0.12" data-rotate="-12" data-color="#06B6D4" data-glow="rgba(6, 182, 212, 0.4)" data-icon="fa-solid fa-wind"></div>
+                            <div class="tech-badge-item" data-id="html5" data-name="HTML5" data-x="580" data-y="0" data-delay="0.14" data-rotate="12" data-color="#E34F26" data-glow="rgba(227, 79, 38, 0.4)" data-icon="fa-brands fa-html5"></div>
+                            <div class="tech-badge-item" data-id="nodejs" data-name="Node.js" data-x="-560" data-y="120" data-delay="0.16" data-rotate="-10" data-color="#339933" data-glow="rgba(51, 153, 51, 0.4)" data-icon="fa-brands fa-node-js"></div>
+                            <div class="tech-badge-item" data-id="css3" data-name="CSS3" data-x="560" data-y="120" data-delay="0.18" data-rotate="10" data-color="#1572B6" data-glow="rgba(21, 114, 182, 0.4)" data-icon="fa-brands fa-css3-alt"></div>
+                            <div class="tech-badge-item" data-id="mongodb" data-name="MongoDB" data-x="-280" data-y="225" data-delay="0.20" data-rotate="-12" data-color="#47A248" data-glow="rgba(71, 162, 72, 0.4)" data-icon="fa-solid fa-database"></div>
+                            <div class="tech-badge-item" data-id="express" data-name="Express.js" data-x="280" data-y="225" data-delay="0.22" data-rotate="8" data-color="#E2E8F0" data-glow="rgba(226, 232, 240, 0.4)" data-icon="fa-solid fa-server"></div>
+                            <div class="tech-badge-item" data-id="git" data-name="Git" data-x="-80" data-y="225" data-delay="0.24" data-rotate="-8" data-color="#F05032" data-glow="rgba(240, 80, 50, 0.4)" data-icon="fa-brands fa-git-alt"></div>
+                            <div class="tech-badge-item" data-id="github" data-name="GitHub" data-x="80" data-y="225" data-delay="0.26" data-rotate="8" data-color="#E2E8F0" data-glow="rgba(226, 232, 240, 0.4)" data-icon="fa-brands fa-github"></div>
+                        </div>
+                        
+                        <div class="project-card-inner">
+                            <div class="project-img-wrapper">
+                                <img src="project1.png" alt="CineAI Studio Engine" class="project-image">
+                                <div class="project-img-overlay"></div>
+                                <!-- Surprise Box Pill Badge -->
+                                <div class="surprise-box-badge">
+                                    <i class="fa-solid fa-box text-purple-400"></i>
+                                    <span>SURPRISE BOX</span>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <span class="project-category"><span class="category-dot"></span> AI / GENERATIVE VIDEO SAAS</span>
+                                <h3 class="project-title">CineAI Studio Engine</h3>
+                                <p class="project-desc">Next-generation AI video editing & VFX suite featuring real-time neural background segmentation, automated scene detection, custom color grading, and low-latency GPU cloud rendering.</p>
+                                <div class="project-tech-stack">
+                                    <span class="tech-pill">Next.js 14</span>
+                                    <span class="tech-pill">WebGPU</span>
+                                    <span class="tech-pill">FastAPI</span>
+                                    <span class="tech-pill">PyTorch</span>
+                                    <span class="tech-pill">AWS S3</span>
+                                    <span class="tech-pill">Tailwind CSS</span>
+                                </div>
+                                <div class="project-actions">
+                                    <a href="#" class="btn-project btn-view-details">View Details <i class="fa-solid fa-arrow-right-long"></i></a>
+                                    <div class="proj-action-icons">
+                                        <a href="#" class="btn-action-icon" title="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                        <a href="#" class="btn-action-icon" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 2 -->
+                    <div class="project-card real-project" id="project-2">
+                        <!-- Surprise Box Hover Assets -->
+                        <div class="tech-badges-container">
+                            <div class="tech-badge-item" data-id="figma" data-name="Figma" data-x="0" data-y="-225" data-delay="0.02" data-rotate="0" data-color="#F24E1E" data-glow="rgba(242, 78, 30, 0.4)" data-icon="fa-brands fa-figma"></div>
+                            <div class="tech-badge-item" data-id="react" data-name="React" data-x="-240" data-y="-225" data-delay="0.04" data-rotate="-10" data-color="#00D8FF" data-glow="rgba(0, 216, 255, 0.4)" data-icon="fa-brands fa-react"></div>
+                            <div class="tech-badge-item" data-id="nextjs" data-name="Next.js" data-x="240" data-y="-225" data-delay="0.06" data-rotate="12" data-color="#E2E8F0" data-glow="rgba(226, 232, 240, 0.4)" data-icon="fa-solid fa-code"></div>
+                            <div class="tech-badge-item" data-id="typescript" data-name="TypeScript" data-x="-560" data-y="-120" data-delay="0.08" data-rotate="-8" data-color="#3178C6" data-glow="rgba(49, 120, 198, 0.4)" data-icon="fa-solid fa-cubes"></div>
+                            <div class="tech-badge-item" data-id="javascript" data-name="JavaScript" data-x="560" data-y="-120" data-delay="0.10" data-rotate="8" data-color="#F7DF1E" data-glow="rgba(247, 223, 30, 0.4)" data-icon="fa-brands fa-js"></div>
+                            <div class="tech-badge-item" data-id="tailwind" data-name="Tailwind CSS" data-x="-580" data-y="0" data-delay="0.12" data-rotate="-12" data-color="#06B6D4" data-glow="rgba(6, 182, 212, 0.4)" data-icon="fa-solid fa-wind"></div>
+                            <div class="tech-badge-item" data-id="html5" data-name="HTML5" data-x="580" data-y="0" data-delay="0.14" data-rotate="12" data-color="#E34F26" data-glow="rgba(227, 79, 38, 0.4)" data-icon="fa-brands fa-html5"></div>
+                            <div class="tech-badge-item" data-id="nodejs" data-name="Node.js" data-x="-560" data-y="120" data-delay="0.16" data-rotate="-10" data-color="#339933" data-glow="rgba(51, 153, 51, 0.4)" data-icon="fa-brands fa-node-js"></div>
+                            <div class="tech-badge-item" data-id="css3" data-name="CSS3" data-x="560" data-y="120" data-delay="0.18" data-rotate="10" data-color="#1572B6" data-glow="rgba(21, 114, 182, 0.4)" data-icon="fa-brands fa-css3-alt"></div>
+                            <div class="tech-badge-item" data-id="mongodb" data-name="MongoDB" data-x="-280" data-y="225" data-delay="0.20" data-rotate="-12" data-color="#47A248" data-glow="rgba(71, 162, 72, 0.4)" data-icon="fa-solid fa-database"></div>
+                            <div class="tech-badge-item" data-id="express" data-name="Express.js" data-x="280" data-y="225" data-delay="0.22" data-rotate="8" data-color="#E2E8F0" data-glow="rgba(226, 232, 240, 0.4)" data-icon="fa-solid fa-server"></div>
+                            <div class="tech-badge-item" data-id="git" data-name="Git" data-x="-80" data-y="225" data-delay="0.24" data-rotate="-8" data-color="#F05032" data-glow="rgba(240, 80, 50, 0.4)" data-icon="fa-brands fa-git-alt"></div>
+                            <div class="tech-badge-item" data-id="github" data-name="GitHub" data-x="80" data-y="225" data-delay="0.26" data-rotate="8" data-color="#E2E8F0" data-glow="rgba(226, 232, 240, 0.4)" data-icon="fa-brands fa-github"></div>
+                        </div>
+                        
+                        <div class="project-card-inner">
+                            <div class="project-img-wrapper">
+                                <img src="project2.png" alt="OmniSphere Enterprise ERP" class="project-image">
+                                <div class="project-img-overlay"></div>
+                                <!-- Surprise Box Pill Badge -->
+                                <div class="surprise-box-badge">
+                                    <i class="fa-solid fa-box text-purple-400"></i>
+                                    <span>SURPRISE BOX</span>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <span class="project-category"><span class="category-dot"></span> ENTERPRISE / FULL STACK SAAS</span>
+                                <h3 class="project-title">OmniSphere Enterprise ERP</h3>
+                                <p class="project-desc">Scalable enterprise resource planning platform engineered for real-time telemetry, multi-tenant database isolation, automated billing, and interactive microservice APIs.</p>
+                                <div class="project-tech-stack">
+                                    <span class="tech-pill">React</span>
+                                    <span class="tech-pill">NestJS</span>
+                                    <span class="tech-pill">PostgreSQL</span>
+                                    <span class="tech-pill">Redis</span>
+                                    <span class="tech-pill">Docker</span>
+                                    <span class="tech-pill">GraphQL</span>
+                                </div>
+                                <div class="project-actions">
+                                    <a href="#" class="btn-project btn-view-details">View Details <i class="fa-solid fa-arrow-right-long"></i></a>
+                                    <div class="proj-action-icons">
+                                        <a href="#" class="btn-action-icon" title="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                        <a href="#" class="btn-action-icon" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 3 -->
+                    <div class="project-card real-project" id="project-3">
+                        <!-- Surprise Box Hover Assets -->
+                        <div class="tech-badges-container">
+                            <div class="tech-badge-item" data-id="figma" data-name="Figma" data-x="0" data-y="-225" data-delay="0.02" data-rotate="0" data-color="#F24E1E" data-glow="rgba(242, 78, 30, 0.4)" data-icon="fa-brands fa-figma"></div>
+                            <div class="tech-badge-item" data-id="react" data-name="React" data-x="-240" data-y="-225" data-delay="0.04" data-rotate="-10" data-color="#00D8FF" data-glow="rgba(0, 216, 255, 0.4)" data-icon="fa-brands fa-react"></div>
+                            <div class="tech-badge-item" data-id="nextjs" data-name="Next.js" data-x="240" data-y="-225" data-delay="0.06" data-rotate="12" data-color="#E2E8F0" data-glow="rgba(226, 232, 240, 0.4)" data-icon="fa-solid fa-code"></div>
+                            <div class="tech-badge-item" data-id="typescript" data-name="TypeScript" data-x="-560" data-y="-120" data-delay="0.08" data-rotate="-8" data-color="#3178C6" data-glow="rgba(49, 120, 198, 0.4)" data-icon="fa-solid fa-cubes"></div>
+                            <div class="tech-badge-item" data-id="javascript" data-name="JavaScript" data-x="560" data-y="-120" data-delay="0.10" data-rotate="8" data-color="#F7DF1E" data-glow="rgba(247, 223, 30, 0.4)" data-icon="fa-brands fa-js"></div>
+                            <div class="tech-badge-item" data-id="tailwind" data-name="Tailwind CSS" data-x="-580" data-y="0" data-delay="0.12" data-rotate="-12" data-color="#06B6D4" data-glow="rgba(6, 182, 212, 0.4)" data-icon="fa-solid fa-wind"></div>
+                            <div class="tech-badge-item" data-id="html5" data-name="HTML5" data-x="580" data-y="0" data-delay="0.14" data-rotate="12" data-color="#E34F26" data-glow="rgba(227, 79, 38, 0.4)" data-icon="fa-brands fa-html5"></div>
+                            <div class="tech-badge-item" data-id="nodejs" data-name="Node.js" data-x="-560" data-y="120" data-delay="0.16" data-rotate="-10" data-color="#339933" data-glow="rgba(51, 153, 51, 0.4)" data-icon="fa-brands fa-node-js"></div>
+                            <div class="tech-badge-item" data-id="css3" data-name="CSS3" data-x="560" data-y="120" data-delay="0.18" data-rotate="10" data-color="#1572B6" data-glow="rgba(21, 114, 182, 0.4)" data-icon="fa-brands fa-css3-alt"></div>
+                            <div class="tech-badge-item" data-id="mongodb" data-name="MongoDB" data-x="-280" data-y="225" data-delay="0.20" data-rotate="-12" data-color="#47A248" data-glow="rgba(71, 162, 72, 0.4)" data-icon="fa-solid fa-database"></div>
+                            <div class="tech-badge-item" data-id="express" data-name="Express.js" data-x="280" data-y="225" data-delay="0.22" data-rotate="8" data-color="#E2E8F0" data-glow="rgba(226, 232, 240, 0.4)" data-icon="fa-solid fa-server"></div>
+                            <div class="tech-badge-item" data-id="git" data-name="Git" data-x="-80" data-y="225" data-delay="0.24" data-rotate="-8" data-color="#F05032" data-glow="rgba(240, 80, 50, 0.4)" data-icon="fa-brands fa-git-alt"></div>
+                            <div class="tech-badge-item" data-id="github" data-name="GitHub" data-x="80" data-y="225" data-delay="0.26" data-rotate="8" data-color="#E2E8F0" data-glow="rgba(226, 232, 240, 0.4)" data-icon="fa-brands fa-github"></div>
+                        </div>
+                        
+                        <div class="project-card-inner">
+                            <div class="project-img-wrapper">
+                                <img src="project3.png" alt="AeroVision Mobile AR" class="project-image">
+                                <div class="project-img-overlay"></div>
+                                <!-- Surprise Box Pill Badge -->
+                                <div class="surprise-box-badge">
+                                    <i class="fa-solid fa-box text-purple-400"></i>
+                                    <span>SURPRISE BOX</span>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <span class="project-category"><span class="category-dot"></span> MOBILE / AR CAMERA SYSTEM</span>
+                                <h3 class="project-title">AeroVision Mobile AR</h3>
+                                <p class="project-desc">Cross-platform mobile AR cinematography application allowing creators to pre-visualize 3D CGI assets, execute real-time chroma keying, and record spatial camera tracking data.</p>
+                                <div class="project-tech-stack">
+                                    <span class="tech-pill">Flutter</span>
+                                    <span class="tech-pill">Dart</span>
+                                    <span class="tech-pill">ARKit / ARCore</span>
+                                    <span class="tech-pill">OpenCV</span>
+                                    <span class="tech-pill">Firebase</span>
+                                    <span class="tech-pill">Riverpod</span>
+                                </div>
+                                <div class="project-actions">
+                                    <a href="#" class="btn-project btn-view-details">View Details <i class="fa-solid fa-arrow-right-long"></i></a>
+                                    <div class="proj-action-icons">
+                                        <a href="#" class="btn-action-icon" title="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                        <a href="#" class="btn-action-icon" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6: Contact + Footer Section -->
+        <section id="contact" class="scroll-section contact-footer-section">
+            <div class="contact-footer-overlay">
+                <div class="contact-top">
+                    <div class="contact-layout-grid">
+                        
+                        <!-- Left Column: Details & Grid Cards -->
+                        <div class="contact-left-col">
+                            <span class="section-tag collaborate-tag">
+                                <span class="tag-dot magenta"></span> COLLABORATE
+                            </span>
+                            <h2 class="contact-title-main">Let's Build Something <span class="gradient-title-text">Amazing</span></h2>
+                            <p class="contact-description">Have a project in mind, want to hire me, or just want to say hello? I'd love to hear from you!</p>
+                            <div class="title-divider-line"></div>
+                            
+                            <!-- Grid Details Cards (2x2) -->
+                            <div class="contact-details-grid">
+                                
+                                <!-- Card 1: Email -->
+                                <div class="contact-detail-card">
+                                    <div class="card-header-flex">
+                                        <div class="card-icon-box purple"><i class="fa-regular fa-envelope"></i></div>
+                                        <div class="card-title-row">
+                                            <span class="card-label">Email</span>
+                                            <i class="fa-solid fa-chevron-right card-arrow"></i>
+                                        </div>
+                                    </div>
+                                    <p class="card-value-text">immanromanaj@gmail.com</p>
+                                    <button class="card-action-btn" onclick="navigator.clipboard.writeText('immanromanaj@gmail.com'); alert('Email copied to clipboard!');">
+                                        <span>Copy Email</span> <i class="fa-regular fa-copy"></i>
+                                    </button>
+                                </div>
+                                
+                                <!-- Card 2: Phone -->
+                                <div class="contact-detail-card">
+                                    <div class="card-header-flex">
+                                        <div class="card-icon-box purple"><i class="fa-solid fa-phone"></i></div>
+                                        <div class="card-title-row">
+                                            <span class="card-label">Phone</span>
+                                            <i class="fa-solid fa-chevron-right card-arrow"></i>
+                                        </div>
+                                    </div>
+                                    <p class="card-value-text">+91 8248754186</p>
+                                    <a href="tel:+919876543210" class="card-action-btn">
+                                        <span>Call Now</span> <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    </a>
+                                </div>
+                                
+                                <!-- Card 3: Location -->
+                                <div class="contact-detail-card">
+                                    <div class="card-header-flex">
+                                        <div class="card-icon-box purple"><i class="fa-solid fa-location-dot"></i></div>
+                                        <div class="card-title-row">
+                                            <span class="card-label">Location</span>
+                                            <i class="fa-solid fa-chevron-right card-arrow"></i>
+                                        </div>
+                                    </div>
+                                    <p class="card-value-text text-multi">Puducherry, India <br><span>Available Worldwide</span></p>
+                                    <a href="https://maps.google.com" target="_blank" class="card-action-btn">
+                                        <span>View on Map</span> <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    </a>
+                                </div>
+                                
+                                <!-- Card 4: Availability -->
+                                <div class="contact-detail-card">
+                                    <div class="card-header-flex">
+                                        <div class="card-icon-box purple"><i class="fa-solid fa-briefcase"></i></div>
+                                        <div class="card-title-row">
+                                            <span class="card-label">Availability</span>
+                                            <i class="fa-solid fa-chevron-right card-arrow"></i>
+                                        </div>
+                                    </div>
+                                    <ul class="avail-status-list">
+                                        <li><span class="status-indicator-dot green"></span> Full-Time</li>
+                                        <li><span class="status-indicator-dot green"></span> Freelance</li>
+                                        <li><span class="status-indicator-dot green"></span> Remote</li>
+                                    </ul>
+                                    <a href="#contact" class="card-action-btn">
+                                        <span>Let's Work Together</span> <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    </a>
+                                </div>
+                                
+                            </div>
+                            
+                            <!-- Connect Social Box -->
+                            <div class="connect-box-row">
+                                <p class="connect-label-title">Connect with me</p>
+                                <div class="connect-social-boxes">
+                                    <a href="https://github.com/imman077" target="_blank" class="social-square-btn" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                                    <a href="https://www.linkedin.com/in/immanuvel077/" target="_blank" class="social-square-btn" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                                    <a href="mailto:immanromanaj@gmail.com" class="social-square-btn" title="Email"><i class="fa-regular fa-envelope"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Right Column: Glassmorphic Contact Form -->
+                        <div class="contact-right-col">
+                            <div class="form-glass-card">
+                                <div class="form-card-header-flex">
+                                    <div class="form-header-icon-box"><i class="fa-regular fa-comments"></i></div>
+                                    <div class="form-header-titles">
+                                        <h3>Send Me a Message</h3>
+                                        <p>I usually reply within 24 hours</p>
+                                    </div>
+                                </div>
+                                
+                                <form id="form" class="form-fields-container">
+                                    
+                                    <div class="form-double-fields-row">
+                                        <div class="field-input-wrapper">
+                                            <i class="fa-regular fa-user field-icon"></i>
+                                            <input type="text" name="name" placeholder="Your Name" required>
+                                        </div>
+                                        <div class="field-input-wrapper">
+                                            <i class="fa-regular fa-envelope field-icon"></i>
+                                            <input type="email" name="email" placeholder="Your Email" required>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="field-input-wrapper full-width">
+                                        <i class="fa-regular fa-folder field-icon"></i>
+                                        <input type="text" name="subject" placeholder="Subject" required>
+                                    </div>
+                                    
+                                    <div class="field-input-wrapper full-width textarea-wrapper">
+                                        <i class="fa-regular fa-pen-to-square field-icon textarea-icon"></i>
+                                        <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+                                    </div>
+                                    
+                                    <button type="submit" class="gradient-submit-btn">
+                                        <span class="btn-text">Send Message</span> <i class="fa-regular fa-paper-plane"></i>
+                                    </button>
+                                    <div id="form-response" class="form-response-msg"></div>
+                                </form>
+                                
+                                <div class="security-notice-indicator">
+                                    <i class="fa-solid fa-lock"></i>
+                                    <span>Your information is safe with me. I'll never share your data.</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                <!-- Premium Simplified Footer Area -->
+                <footer class="premium-footer">
+                    <div class="footer-row">
+                        <h3 class="footer-logo">IMMANUVEL<span>.</span></h3>
+                        
+                        <div class="footer-socials">
+                            <a href="https://github.com" target="_blank" class="social-icon-btn"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://linkedin.com" target="_blank" class="social-icon-btn"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="https://twitter.com" target="_blank" class="social-icon-btn"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="https://instagram.com" target="_blank" class="social-icon-btn"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="mailto:immanromanaj@gmail.com" class="social-icon-btn"><i class="fa-regular fa-envelope"></i></a>
+                        </div>
+                        
+                        <div class="footer-meta">
+                            <p class="copyright">&copy; 2026 Immanuvel. All Rights Reserved.</p>
+                            <p class="built-with">Built with HTML5 • Vanilla CSS • GSAP</p>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- GSAP & Plugins from CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+    <script type="module" src="app.js"></script>
+</body>
+</html>
